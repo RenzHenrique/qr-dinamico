@@ -1,0 +1,2 @@
+# qr-dinamico
+qr-dinamico
