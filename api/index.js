@@ -20,7 +20,7 @@ export default function handler(req, res) {
   if (acessoLiberado) {
 
     res.writeHead(302, {
-      Location: "https://SEU-LINK-AQUI.com"
+      Location: "https://google.com"
     });
 
     res.end();
