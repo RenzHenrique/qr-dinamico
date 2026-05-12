@@ -14,8 +14,9 @@ export default function handler(req, res) {
   // 14h às 15h
 
   const acessoLiberado =
-    (hora >= 10 && hora < 11) ||
-    (hora >= 14 && hora < 15);
+    (hora >= 21:50 && hora < 22:30) ||
+    (hora >= 11:50 && hora < 12:50) ||
+    (hora >= 17:30 && hora < 18:30) ;
 
   if (acessoLiberado) {
 
@@ -77,9 +78,14 @@ export default function handler(req, res) {
           <p>
             Horários válidos:
             <br><br>
-            10h às 11h
+            Sexta-feira:
             <br>
-            14h às 15h
+            das 21:50h às 22:30h
+            <br>
+            Sábado:
+            <br>
+            das 11:50h às 12:50h e das 17:30h às 18:30h
+            <br>
           </p>
         </div>
       </body>
