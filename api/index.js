@@ -8,15 +8,21 @@ export default function handler(req, res) {
   );
 
   const hora = agora.getHours();
+  const minuto = agora.getMinutes();
 
-  // Horários permitidos:
-  // 10h às 11h
-  // 14h às 15h
+  // Converte tudo para minutos
+  const horarioAtual = hora * 60 + minuto;
 
+  // Horários permitidos
   const acessoLiberado =
-    (hora >= 21:50 && hora < 22:30) ||
-    (hora >= 11:50 && hora < 12:50) ||
-    (hora >= 17:30 && hora < 18:30) ;
+    (horarioAtual >= (21 * 60 + 50) &&
+     horarioAtual < (22 * 60 + 30)) ||
+
+    (horarioAtual >= (11 * 60 + 50) &&
+     horarioAtual < (12 * 60 + 50)) ||
+
+    (horarioAtual >= (17 * 60 + 30) &&
+     horarioAtual < (18 * 60 + 30));
 
   if (acessoLiberado) {
 
@@ -85,7 +91,6 @@ export default function handler(req, res) {
             Sábado:
             <br>
             das 11:50h às 12:50h e das 17:30h às 18:30h
-            <br>
           </p>
         </div>
       </body>
