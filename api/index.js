@@ -27,7 +27,7 @@ export default function handler(req, res) {
   if (acessoLiberado) {
 
     res.writeHead(302, {
-      Location: "https://google.com"
+      Location: "https://www.sympla.com.br/evento/1-encontro-de-biomedicina-da-nova-alta-paulista/3418441?share_id=whatsapp"
     });
 
     res.end();
